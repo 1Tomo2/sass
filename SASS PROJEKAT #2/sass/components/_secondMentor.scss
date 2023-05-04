@@ -1,0 +1,58 @@
+main {
+    #secondMentor{
+        padding-top: 200px;
+        background-color: $black;
+        .container{
+            @include container;
+           
+            span{
+                display: block;
+            }
+            .flex{
+                @include flex;
+                #imgMentor{
+                    h1{
+                        @include projectH;
+                    }
+                }
+                #mentorContent{
+                    .mentorBoxes{
+                        width: 655px;
+                        height: 180px;
+                        background-color: $blue;
+                        margin: 50px;
+                        border-radius: 12px;
+                        position: relative;
+                        .secondmentorImg{
+                            @include inlineBlock;
+                            bottom: 40px;
+                            img{
+                                padding: 33px;
+                                position: absolute;
+                                border: 1px solid $green;
+                                background-color: $blue;
+                                border-radius: 50%;
+                                left: -59px;
+                                top: 30px;
+                            }
+                        }
+                        .secondmentorTxt {
+                            @include inlineBlock;
+                            margin-left: 15%;
+                            margin-top: 15px;
+                            width: 55%;
+                            h3{
+                                @include h3;
+                                margin-left: 12px;
+                                margin-top: 5px;
+                            }
+                            p{
+                                @include secondP;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

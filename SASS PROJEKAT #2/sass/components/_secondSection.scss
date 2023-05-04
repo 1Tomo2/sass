@@ -1,0 +1,99 @@
+main {
+    #featuredProject {
+        background-color: $black;
+
+        .container {
+            @include container;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 700;
+                font-family: $poppins;
+                color: $white;
+                padding-top: 140px;
+                margin-bottom: 38px;
+            }
+
+            .grid {
+                @include grid;
+
+                .gridEl {
+                    margin-bottom: 100px;
+
+                    .imgs {
+                        @include lastImgs;
+                        
+                        .projectImg {
+                            @include projectBackground;
+
+                            .firstImg {
+                                @include firstImg;
+                            }
+
+                            .strelica {
+                                @include strelica;
+
+                            }
+
+                            .new {
+                                position: absolute;
+                                top: 25px;
+                                left: 47px;
+                            }
+
+                            .tailwind {
+                                @include tailwind;
+                            }
+
+                            .react {
+                                @include react;
+                            }
+
+                            .sass {
+                                position: absolute;
+                                left: 103px;
+                                top: 77px;
+                            }
+
+                        }
+                    }
+
+                    .projectText {
+                        @include inlineBlock;
+                        width: 60%;
+                        position: relative;
+                        left: 300px;
+
+                        h3 {
+                            @include webDeveloper;
+                        }
+
+                        h2 {
+                            @include projectH;
+                        }
+
+                        p {
+                            @include projectP;
+                        }
+                    }
+
+                }
+            }
+
+            #featuredBtn {
+                button {
+                    @include seeMore;
+
+                    img {
+                        @include seeImg;
+                    }
+
+                    span {
+                        @include seeSpan;
+                    }
+                }
+            }
+        }
+
+    }
+}

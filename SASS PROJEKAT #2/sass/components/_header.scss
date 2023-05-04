@@ -1,0 +1,53 @@
+header {
+  background-color: $black;
+  font-family: $poppins;
+  width: 100%;
+  // position: fixed;
+  padding-bottom: 50px;
+
+  .container {
+    @include container;
+
+    #line {
+      @include line;
+    }
+
+    .flex {
+      @include flex;
+
+      .logo {
+        #logo {
+          color: $white;
+          margin-top: 52px;
+          margin-bottom: 45px;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+
+      nav {
+        margin-top: 55px;
+
+        ul {
+          @include flex;
+          gap: 65px;
+        }
+
+        li {
+          font-weight: 600;
+
+          a {
+            text-decoration: none;
+            color: $gray;
+
+            &:hover {
+              color: $white;
+              transform: scale(0.95);
+              transition: 0.5s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

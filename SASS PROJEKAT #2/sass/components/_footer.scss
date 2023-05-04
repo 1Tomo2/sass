@@ -1,0 +1,38 @@
+footer {
+    background-color: $black;
+
+    .line {
+        @include line;
+    }
+
+    .container {
+        @include container;
+
+        ul {
+            @include flex;
+            justify-content: center;
+            gap: 65px;
+            margin-top: 96px;
+        }
+
+        li {
+            @include li;
+        }
+
+        p {
+            @include li;
+            text-align: center;
+            margin-top: 48px;
+        }
+        #footerImg {
+            text-align: center;
+            margin-top: 20px;
+            img{
+                margin-right: 37px;
+                &:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

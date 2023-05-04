@@ -1,0 +1,82 @@
+main {
+    #codeSnippet {
+        background-color: $black;
+        padding-top: 80px;
+
+        .container {
+            @include container;
+
+            h1 {
+                @include projectH;
+            }
+
+            p {
+                @include li;
+            }
+
+            .search {
+                position: relative;
+
+                #search {
+                    background-color: $blue;
+                    color: $searchGray;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 18px;
+                    font-family: $poppins;
+                    font-weight: 400;
+                    padding-left: 36px;
+                    width: 1140px;
+                    height: 83px;
+                }
+
+                #searchImg {
+                    position: absolute;
+                    right: -70px;
+                    top: 25px;
+                }
+            }
+            .grid{
+                @include grid;
+                grid-template-columns: 1fr 1fr;
+                .codeBox{
+                    @include snippet;
+                    h3 {
+                        @include bigP;
+                        margin: 50px 0px 3px 40px;
+                    }
+                    p {
+                        @include secondP;
+                        margin-left: 25px;
+                    }
+                   
+                    .snippetTailwind{
+                        @include snippetTailwind;
+                    }
+                    .snippetReact{
+                        @include snippetReact;
+                    }
+                    .snippetSass{
+                        @include snippetSass
+                    }
+                    .snippetHtml{
+                        @include snippetHtml;
+                    }
+                    
+                    .stars {
+                        img {
+                            position: absolute;
+                            right: 130px;
+                            bottom: 32px;
+                        }
+                        p {
+                            position: absolute;
+                            right: 52px;
+                            bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
